@@ -1,0 +1,116 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "fc01a66971deacb51d805b06c06fe6a6",
+    "packages": [
+        {
+            "name": "donatj/flags",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/donatj/Flags.git",
+                "reference": "2b27ccfd4f16455ace0923ae6ff154812c4b4523"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/donatj/Flags/zipball/2b27ccfd4f16455ace0923ae6ff154812c4b4523",
+                "reference": "2b27ccfd4f16455ace0923ae6ff154812c4b4523",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "donatj/drop": "*",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "donatj": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com",
+                    "homepage": "http://donatstudios.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Go-lang `Flags` inspired command-line flag/option parser",
+            "keywords": [
+                "arguments",
+                "cli",
+                "flags",
+                "options"
+            ],
+            "time": "2013-11-19 22:49:44"
+        },
+        {
+            "name": "makotokw/twient",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/makotokw/php-twient.git",
+                "reference": "0b5ebd35087807f594d418f2ca58c9c96cf63852"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/makotokw/php-twient/zipball/0b5ebd35087807f594d418f2ca58c9c96cf63852",
+                "reference": "0b5ebd35087807f594d418f2ca58c9c96cf63852",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Twient": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Makoto Kawasaki",
+                    "email": "makoto.kw@gmail.com",
+                    "homepage": "http://makotokw.com"
+                }
+            ],
+            "description": "Twitter Client for PHP 5.3+",
+            "homepage": "http://github.com/makotokw/php-twient",
+            "keywords": [
+                "api",
+                "twitter"
+            ],
+            "time": "2014-02-10 13:36:19"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": [
+
+    ]
+}
