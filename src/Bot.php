@@ -142,16 +142,26 @@ class Bot
          * @var Storage $cacheStorage
          */
         list ($originalStorage, $cacheStorage) = $this->createStorage();
-        $messages = $cacheStorage->read();
+
+        $messages = array();
+        if (!$cacheStorage) {
+            $messages = $cacheStorage->read();
+        }
         if (empty($messages)) {
-            $messages = $originalStorage->read();
+            if ($originalStorage) {
+                $messages = $originalStorage->read();
+            }
             if (is_array($messages)) {
                 shuffle($messages);
             }
         }
 
         if (empty($messages)) {
-            throw new \Exception(sprintf('Load Error: %s%s.txt or .xml', $this->dataDir, strtolower($this->screenName)));
+            throw new \Exception(sprintf(
+                'Load Error: %s%s.txt or .xml',
+                $this->dataDir,
+                strtolower($this->screenName)
+            ));
         }
 
         do {

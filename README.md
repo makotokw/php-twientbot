@@ -79,7 +79,14 @@ $ heroku addons:add rediscloud
 $ heroku addons:add scheduler
 ```
 
-### Setup scheduler
+### Tweet manually
+
+```
+heroku run php bot.php post [bot_account]
+```
+
+
+### Tweet by scheduler
 
 ```
 $ heroku addons:open scheduler
@@ -88,7 +95,7 @@ $ heroku addons:open scheduler
 Add **Hourly** Job.
 
 ex) Task:
-``php bot.php post bot_account --executed-at=11,13,15,17 --timezone=Asia/Tokyo``
+``php bot.php post [bot_account] --executed-at=11,13,15,17 --timezone=Asia/Tokyo``
 
 |arg|desciption|
 |:--|:--|
