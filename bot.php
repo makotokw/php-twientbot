@@ -38,6 +38,15 @@ try {
             }
             break;
 
+        case 'cache:dump':
+            $screenName = $flags->arg(1);
+            if (empty($screenName)) {
+                throw new \Exception("Usage: bot.php cache:dump screen-name");
+            }
+            $bot = createBot($screenName);
+            $bot->clearDump();
+            break;
+
         case 'cache:clear':
             $screenName = $flags->arg(1);
             if (empty($screenName)) {

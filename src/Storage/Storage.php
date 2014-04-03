@@ -23,6 +23,11 @@ abstract class Storage
      */
     abstract public function clear();
 
+    public function dump()
+    {
+        echo json_encode($this->read());
+    }
+
     /**
      * @param array $messages
      * @return array
