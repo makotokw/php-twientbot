@@ -5,6 +5,9 @@
 .AppleDouble
 .LSOverride
 
+### php ###
+cache.properties
+
 ### Composer ###
 composer.phar
 vendor/

@@ -1,7 +1,7 @@
 <?php
 namespace Makotokw\TwientBot;
 
-use Twient\Twitter\V1dot1 as Twitter;
+use Makotokw\Twient\Twitter\V1dot1 as Twitter;
 
 use Makotokw\TwientBot\Storage\Storage;
 use Makotokw\TwientBot\Storage\TextFileStorage;
